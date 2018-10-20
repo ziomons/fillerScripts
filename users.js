@@ -7,4 +7,4 @@ const contractAddress = /*nuovo address*/;
 
 const contract = new web3.eth.Contract(abi, contractAddress);
 
-contract.addUser.call('fakeAddress', 'tizio a caso');
+contract.addUser.call(process.argv[2], process.argv[3]);
